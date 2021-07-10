@@ -7,16 +7,25 @@
   "private": false,
   "main": "dist/index.js",
   "scripts": {
-    "start": "parcel watch lib/index.jsx --out-dir ./dist",
-    "build": "parcel build lib/index.jsx --global react-techradar",
+    "start": "parcel watch lib/index.js --out-dir ./dist",
+    "build": "parcel build lib/index.js --global react-techradar",
     "start-demo": "parcel www/src/index.html --out-dir www/dist --open",
     "build-demo": "parcel build www/src/index.html --out-dir www/dist --public-url ./"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/plugin-transform-regenerator": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
+    "d3": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

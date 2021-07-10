@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { hydrate } from 'react-dom';
 
-import Techradar from '../../lib';
+import Techradar from '../../lib/Techradar';
 
 const Demo = () => (
   <Fragment>
