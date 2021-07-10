@@ -56,9 +56,6 @@ export default function Techradar() {
   }
 
   return (
-    <div className='react-world'>
-      <div>{active}</div>
-      <div id="radar" ref={refElement} />
-    </div>
+    <div ref={refElement} />
   );
 }
