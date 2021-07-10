@@ -7,9 +7,16 @@
   "private": false,
   "main": "dist/index.js",
   "scripts": {
-    "dev": "parcel www/index.html"
+    "start": "parcel watch lib/index.jsx --out-dir ./dist",
+    "build": "parcel build lib/index.jsx --global react-techradar",
+    "start-demo": "parcel www/src/index.html --out-dir www/dist --open",
+    "build-demo": "parcel build www/src/index.html --out-dir www/dist --public-url ./"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
