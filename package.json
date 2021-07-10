@@ -1,0 +1,9 @@
+{
+  "name": "react-techradar",
+  "version": "0.1.0",
+  "description": "React component for technology radar",
+  "main": "dist/index.js",
+  "author": "Sergey Lukin <contact@sergeylukin.com>",
+  "license": "MIT",
+  "private": false
+}
