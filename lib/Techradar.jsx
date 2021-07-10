@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import D3Component from './D3Component';
+import fetchedData from './data';
+
+import './main.css';
 
 let vis;
 
@@ -16,7 +19,8 @@ export default function Techradar() {
   useEffect(updateVisOnResize, [ width, height ]);
 
   function fetchData() {
-    Promise.resolve().then(() => setData(['a', 'b', 'c']));
+    const IDEAL_BLIP_WIDTH = 22
+    Promise.resolve().then(() => setData(fetchedData.points.map((point, i) => ({...point, id: i, width: IDEAL_BLIP_WIDTH}))));
   }
 
   function handleResizeEvent() {
@@ -54,7 +58,7 @@ export default function Techradar() {
   return (
     <div className='react-world'>
       <div>{active}</div>
-      <div ref={refElement}/>
+      <div id="radar" ref={refElement} />
     </div>
   );
 }
