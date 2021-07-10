@@ -13,20 +13,30 @@
     "build-demo": "parcel build www/src/index.html --out-dir www/dist --public-url ./"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
+    "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
     "@babel/plugin-transform-regenerator": "^7.14.5",
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.0.0-rc.0",
+    "@emotion/styled": "^11.3.0",
+    "@emotion/styled-base": "^11.0.0",
     "chance": "^1.1.7",
     "d3": "^7.0.0",
     "d3-tip": "^0.9.1",
+    "emotion-theming": "^11.0.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sergey-components-library": "git+https://github.com/sergeylukin/sergey-components-library.git"
   },
   "browserslist": [
     "since 2017-06"
