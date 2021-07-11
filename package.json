@@ -1,5 +1,5 @@
 {
-  "name": "react-techradar",
+  "name": "@sergeylukin/react-techradar",
   "version": "0.1.0",
   "description": "React component for technology radar",
   "author": "Sergey Lukin <contact@sergeylukin.com>",
@@ -13,6 +13,9 @@
     "start-demo": "parcel www/src/index.html --out-dir www/dist --open",
     "build-demo": "parcel build www/src/index.html --out-dir www/dist --public-url ./"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
@@ -39,5 +42,7 @@
     "react-dom": "^17.0.2",
     "sergey-components-library": "git+https://github.com/sergeylukin/sergey-components-library.git"
   },
-  "browserslist": ["since 2017-06"]
+  "browserslist": [
+    "since 2017-06"
+  ]
 }
