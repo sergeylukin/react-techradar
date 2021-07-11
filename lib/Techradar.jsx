@@ -1,10 +1,8 @@
 /** @jsx jsx */
-import { jsx, ThemeProvider } from '@emotion/react';
-import styled from '@emotion/styled'
+import { jsx } from '@emotion/react';
 import { React, useState, useEffect, useRef } from 'react';
 import D3Component from './D3Component';
 import fetchedData from './data';
-import { Button, theme as defaultButtonTheme  } from 'sergey-components-library';
 
 import './main.css';
 
@@ -59,30 +57,7 @@ export default function Techradar() {
     vis && vis.resize(width, height);
   }
 
-  const theme = {
-    palette: {
-      primary: {
-        main: 'red',
-      }
-    }
-  }
-
-  const SomeText = styled.div`
-    color: ${props => {
-      return props.theme.palette.primary.main;
-    }};
-  `
-
   return (
-    <ThemeProvider theme={theme}>
-      <Button variant="solid"
-        color="primary"
-        size="small"
-        enableElevation
-        disabled>
-        Small Outline Elevated Button</Button>
-      <SomeText>HEEEEEY</SomeText>
       <div ref={refElement} />
-  </ThemeProvider>
   );
 }
