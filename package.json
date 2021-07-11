@@ -7,6 +7,7 @@
   "private": false,
   "main": "dist/index.js",
   "scripts": {
+    "format": "prettier --write \"lib/**/*.{js,jsx}\"",
     "start": "parcel watch lib/index.js --out-dir ./dist",
     "build": "parcel build lib/index.js --global react-techradar",
     "start-demo": "parcel www/src/index.html --out-dir www/dist --open",
@@ -38,7 +39,5 @@
     "react-dom": "^17.0.2",
     "sergey-components-library": "git+https://github.com/sergeylukin/sergey-components-library.git"
   },
-  "browserslist": [
-    "since 2017-06"
-  ]
+  "browserslist": ["since 2017-06"]
 }
