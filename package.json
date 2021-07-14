@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "React component for technology radar",
   "author": "Sergey Lukin <contact@sergeylukin.com>",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/sergeylukin/react-techradar"
+  },
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
